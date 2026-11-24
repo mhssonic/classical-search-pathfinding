@@ -1,15 +1,26 @@
-# Kirby — Find the Way
+# Classical Search Algorithms for Grid Pathfinding
 
-First project for **Introduction to AI** (Amirkabir University of Technology).
+Interactive pathfinding demo that compares **uninformed** and **informed** search on a discrete grid world (Pygame UI themed as Kirby).
 
-Kirby must reach the goal on a grid world using classic search algorithms. The UI is built with Pygame.
+Built for *Introduction to Artificial Intelligence*, Amirkabir University of Technology (AUT).
+
+## Highlights
+
+- Implements BFS, DFS, Uniform-Cost Search, Greedy Best-First Search, and A\*
+- Shared node / frontier abstractions for fair algorithm comparison
+- Editable grid maps (`matriz.txt`) and a real-time visualization of explored paths
+- Suitable resume line: *Implemented and visualized classical search algorithms (BFS, DFS, UCS, Greedy, A\*) for grid pathfinding*
 
 ## Algorithms
 
-| Type | Algorithms |
-|------|------------|
-| Uninformed | Breadth-First Search (BFS), Depth-First Search (DFS), Uniform-Cost Search |
+| Category | Method |
+|----------|--------|
+| Uninformed | Breadth-First Search, Depth-First Search, Uniform-Cost Search |
 | Informed | Greedy Best-First Search, A\* Search |
+
+## Tech stack
+
+Python · NumPy · Pygame
 
 ## Setup
 
@@ -25,22 +36,19 @@ pip install -r requirements.txt
 python main.py
 ```
 
-Edit `matriz.txt` to change the world layout (grid of cells Kirby can traverse).
+Change the world layout by editing `matriz.txt`, then re-run.
 
-## Project layout
+## Repository layout
 
 ```
-.
-├── main.py              # Entry point
-├── interface.py         # Pygame UI
-├── node.py              # Search node / state helpers
-├── matriz.txt           # Grid world definition
-├── algorithms/          # BFS, DFS, UCS, Greedy, A*
-├── images/ font/ music/ # Assets
-└── requirements.txt
+main.py           Entry point
+interface.py      Pygame visualization
+node.py           Search node / state helpers
+matriz.txt        Grid map definition
+algorithms/       BFS, DFS, UCS, Greedy, A*
+images/ font/ music/
 ```
 
-## Requirements
+## Course
 
-- Python 3.9+
-- `numpy`, `pygame` (see `requirements.txt`)
+Introduction to Artificial Intelligence — Amirkabir University of Technology
